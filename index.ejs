@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <elm-counter id="counter"></elm-counter>
+    <script>
+      document.getElementById('counter').addEventListener(
+        'change',
+        ({ detail }) => console.log(detail),
+      );
+    </script>
+  </body>
+</html>
